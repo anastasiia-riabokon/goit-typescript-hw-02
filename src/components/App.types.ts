@@ -28,3 +28,13 @@ type OnClickImage = {
 type LoadMoreProps = {
   onClick: () => void;
 };
+
+type ImageModalProps = {
+  isOpen: SwitchToggle;
+  onClose: () => void;
+  photoDetails: Photo | null;
+};
+
+type Tags = {
+  [key: string]: string;
+};
