@@ -1,4 +1,4 @@
-const ImageCard = ({alt_description, urls, likes, tags, description, links, user}: Photo, {onClick}:OnClickImage) => {
+const ImageCard = ({alt_description, urls, likes, tags, description, links, user,onClick}: Photo & OnClickImage) => {
   return (
     <>
       <img

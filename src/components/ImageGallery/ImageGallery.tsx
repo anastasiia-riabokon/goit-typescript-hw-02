@@ -1,7 +1,7 @@
 import {useEffect, useRef} from "react";
 import ImageCard from "../ImageCard/ImageCard";
 
-const ImageGallery = ({photos}:ImageGalleryProps, {onClick}:OnClickImage) => {
+const ImageGallery = ({photos,onClick}:ImageGalleryProps) => {
   const photoRef = useRef<HTMLLIElement>(null);
 
   const isFirstRender = useRef(true);
