@@ -8,6 +8,12 @@ type Photo = {
   [key: string]: any;
 };
 
+type PhotoAPIResponse = {
+  total_pages: number;
+  results: Photo[];
+  total: number;
+};
+
 type SearchBarProps = {
   setQuery: (query: string) => void;
 };
