@@ -15,3 +15,8 @@ type SearchBarProps = {
 type SearchFormData = {
   query: string;
 };
+
+type ImageGalleryProps = {
+  photos: Photo;
+  onClick: (photo: Photo) => void;
+};
