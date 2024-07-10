@@ -18,8 +18,13 @@ type SearchFormData = {
 
 type ImageGalleryProps = {
   photos: Photo;
+  onClick: (photo: Photo) => void;
 };
 
 type OnClickImage = {
   onClick: (photo: Photo) => void;
+};
+
+type LoadMoreProps = {
+  onClick: () => void;
 };
